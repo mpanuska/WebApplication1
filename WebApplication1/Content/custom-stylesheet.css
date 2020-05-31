@@ -1,0 +1,26 @@
+﻿.bg {
+    background-image: url('Images/victory.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+.row.display-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .row.display-flex > [class*='col-'] {
+        flex-grow: 1;
+    }
+
+
+.row.display-flex [class*='col-'] {
+    background-color: #fff;
+    opacity: 90%;
+}
+
+footer{
+    color: #FFF;
+}
