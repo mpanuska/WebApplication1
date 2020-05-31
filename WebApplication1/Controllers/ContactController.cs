@@ -25,8 +25,8 @@ namespace WebApplication1.Controllers
             string SenderEmail = System.Configuration.ConfigurationManager.AppSettings["SenderEmail"].ToString();
             string SenderPassword = System.Configuration.ConfigurationManager.AppSettings["SenderPassword"].ToString();
 
-            MailMessage mailMessage = new MailMessage(SenderEmail, model.Email, model.Subject, "Thank you for reaching out to Matts Boxing regarding: " + model.Body + "We will be contacting you shortly");
-            mailMessage.IsBodyHtml = false;
+            MailMessage mailMessage = new MailMessage(SenderEmail, model.Email, model.Subject, "Thank you for reaching out to Matts Boxing regarding: <br /><br />" + model.Body + "<br /><br />We will be contacting you shortly.<br /><br />Matts Boxing<br />555-555-5555<br />mattsboxingcis4910c@gmail.com");
+            mailMessage.IsBodyHtml = true;
             mailMessage.BodyEncoding = UTF8Encoding.UTF8;
 
             SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
