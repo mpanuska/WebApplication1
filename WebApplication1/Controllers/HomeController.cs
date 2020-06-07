@@ -6,14 +6,16 @@ using System.Web.Mvc;
 
 namespace WebApplication1.Controllers
 {
-    [Authorize]
+    
     public class HomeController : Controller
     {
+        [Authorize]
         public ActionResult Index()
         {
             return View();
         }
 
+        [Authorize]
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -21,6 +23,7 @@ namespace WebApplication1.Controllers
             return View();
         }
 
+        [Authorize]
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
@@ -28,11 +31,20 @@ namespace WebApplication1.Controllers
             return View();
         }
 
-        public ActionResult Store()
+        [Authorize]
+        public ActionResult Merchandise()
         {
-            ViewBag.Message = "Products for sale.";
+            ViewBag.Message = "Merchandise available for sale.";
+
+            return View();
+        }
+
+        public ActionResult Signoff()
+        {
+            ViewBag.Message = "Signoff confirmation.";
 
             return View();
         }
     }
+
 }

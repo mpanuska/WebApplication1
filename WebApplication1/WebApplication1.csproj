@@ -56,6 +56,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -190,12 +192,18 @@
     <Content Include="Content\custom-stylesheet.css" />
     <Content Include="Content\Images\boxer.jpg" />
     <Content Include="Content\Images\coach.jpg" />
+    <Content Include="Content\Images\gloves.jpg" />
     <Content Include="Content\Images\heavybag.jpg" />
     <Content Include="Content\Images\logo.jpg" />
     <Content Include="Content\Images\map.jpg" />
+    <Content Include="Content\Images\mouth-guard.jpg" />
     <Content Include="Content\Images\pads.jpg" />
     <Content Include="Content\Images\schedule.jpg" />
+    <Content Include="Content\Images\shirt.jpg" />
+    <Content Include="Content\Images\shoes.jpg" />
+    <Content Include="Content\Images\shorts.jpg" />
     <Content Include="Content\Images\victory.jpg" />
+    <Content Include="Content\Images\wraps.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -247,11 +255,13 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Home\Store.cshtml" />
+    <Content Include="Views\Home\Merchandise.cshtml" />
     <Content Include="Views\Contact\Contact.cshtml" />
+    <Content Include="Views\Home\Signoff.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Store\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -265,6 +275,9 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
